@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import 'https://unpkg.com/open-props' layer(design.system);
+@import 'https://unpkg.com/open-props/normalize.light.min.css'
+layer(base.normalize);
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200..900&display=swap');
+
+
+body {
+    background-color: #F3F3F3;
+    font-family: Poppins, 'Open Sans', sans-serif;
+}
+
+/* cabecalho */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* resolver conflitos com o estilo do carrosel */
+.container-list{
+    display: flex;
+    align-items: center;
+
+}
+
+.logo {
+    width: 60px;
+    padding: 0;
+}
+
+nav {
+    padding: 0 15px;
+    color: #fff;
+    background-color: #000;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    z-index: 2000;
+}
+
+nav ul li {
+    display: inline-block;
+    background-color: #000;
+}
+
+nav a {
+    display: block;
+    padding: 0 10px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+    transition: 150ms;
+}
+
+nav a:hover {
+    background-color: #222;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover>ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    width: 180px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 180px;
+}
+
+/* caso as imagens dentro das listas fiquem uma em cima da outras */
+li {
+    a {
+        align-items: center;
+        display: flex;
+
+        img,
+        i {
+            padding-right: 8px;
+        }
+    }
+}
+
+
+/* fim do cabecalho */
+
+/* mini banner */
+
+.banner {
+    width: 100%;
+    height: 750px;
+    margin-bottom: 20px;
+}
+
+.container-main {
+    width: 1600px;
+    margin: auto;
+}
+
+.carousel {
+    z-index: 0;
+}
+
+.container-categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.categories {
+    margin: 12px;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 500px;
+        height: 320px;
+        border-radius: 6px;
+        padding: 0 4px;
+    }
+
+}
+
+/* carrosel */
+
+@layer base.carousel {
+    section {
+        container-type: inline-size;
+        display: grid;
+        place-items: center;
+        gap: var(--size-7);
+        inline-size: 100%;
+        background-color: #F5F5F5;
+        color: var(--gray-10);
+        padding-block: var(--size-7);
+        padding-inline: var(--size-3);
+    }
+
+    .carousel-mini {
+        display: grid;
+        max-inline-size: 1600px;
+        gap: var(--size-3);
+    }
+
+    .main-carousel {
+        display: flex;
+        justify-content: end;
+        margin-right: 12px;
+    }
+
+    .controls {
+        direction: ltr;
+        display: grid;
+        grid-auto-flow: column;
+        place-items: left;
+        gap: 0.75rem;
+
+        @media (width < 768px) {
+            display: none;
+        }
+    }
+
+    .button-carousel {
+        display: grid;
+        place-items: center;
+        inline-size: var(--size-8);
+        block-size: var(--size-8);
+        border-radius: var(--radius-round);
+        transition: background-color 0.2s ease;
+
+        &:focus {
+            box-shadow: 0 0 0 2px var(--indigo-7);
+        }
+
+        &:focus-visible {
+            box-shadow: unset;
+            outline-offset: unset;
+        }
+
+        &:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+    }
+
+    .scroller {
+        display: grid;
+        grid-auto-flow: column;
+        gap: var(--size-3);
+        scroll-behavior: smooth;
+        overflow-x: auto;
+        padding-block-end: var(--size-6);
+        scrollbar-width: thin;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+    }
+
+    .snap {
+        scroll-snap-align: start;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    figure {
+        display: grid;
+        grid-template-rows: 1fr min-content;
+        inline-size: min(100cqi, 500px);
+        place-items: start;
+        gap: var(--size-3);
+
+        img {
+            aspect-ratio: var(--ratio-square);
+            object-fit: cover;
+            background-color: white;
+            block-size: 100%;
+        }
+    }
+
+}
+
+.button-carousel {
+    background-color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* fim mini banner */
+
+/* cards */
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.showcase {
+    margin: 12px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-size: 30px;
+        font-weight: bold;
+        margin: auto;
+        padding:  2px 20px;
+    }
+    hr{
+        width: 600px;
+        height: 12px;
+        background-color: #000;
+    }
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.preco {
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #00000033;
+    width: 80px;
+    padding: 2px;
+    margin: 10px auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 20px;
+    margin: 10px;
+    width: 500px;
+    box-shadow: 4px 4px 8px #0000001a;
+    text-align: center;
+    transition: transform 0.35s;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card img {
+    width: 90%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card a,
+.card a:visited,
+.card a:hover,
+.card a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+button:hover:active {
+    border: 1px solid #00000033;
+}
+
+button {
+    color: #FFF;
+    background-color: #CC2F85;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #BB6496;
+}
+
+
+/* fim cards */
+
+/* rodape */
+
+footer {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.container-footer {
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 22px;
+    color: #cd2f86;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin: 10px 0;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: black;
+    padding-left: 10px;
+}
+
+.footer-col .medias-socias {
+    margin-top: 30px;
+}
+
+.footer-col .medias-socias a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: black;
+    border: 1px solid black;
+    transition: all 0.5s ease;
+}
+
+.footer-col .medias-socias a i {
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover {
+    color: #cd2f86;
+    background-color: black;
+
+    i {
+        color: #cd2f86;
+    }
+}
+
+.footer-col .form-sub input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid blackwhite;
+    color: black;
+    background-color: white;
+}
+
+.footer-col .form-sub input::placeholder {
+    color: black;
+}
+
+.footer-col .form-sub button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: #cd2f86;
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:600px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+/* fim rodape */

@@ -4,6 +4,7 @@
 body {
 	background-color:#f5f5f5;
 	font-family: Poppins, 'Open Sans', sans-serif;
+    
 }
 
 /* início do header/navbar */
@@ -146,6 +147,7 @@ main {
 hr {
     border: 2px solid #000;
 }
+
 a{
     text-decoration: none;
 }

@@ -256,6 +256,7 @@ li {
 .cards {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 50px;
 }
 
 
@@ -351,24 +352,21 @@ footer {
     background-color: white;
     padding: 50px 0;
 }
-
-.container-footer {
+.container-footer{
     max-width: 1400px;
     padding: 0 4%;
     margin: auto;
 }
-
-.row-footer {
+.row-footer{
     display: flex;
     flex-wrap: wrap;
 }
 
-.footer-col {
+.footer-col{
     width: 25%;
     padding: 0 15px;
 }
-
-.footer-col h4 {
+.footer-col h4{
     font-size: 22px;
     color: #cd2f86;
     margin-bottom: 20px;
@@ -376,16 +374,13 @@ footer {
     position: relative;
     text-transform: uppercase;
 }
-
-.footer-col ul {
+.footer-col ul{
     list-style: none;
 }
-
-.footer-col ul li {
+.footer-col ul li{
     margin: 10px 0;
 }
-
-.footer-col ul li a {
+.footer-col ul li a{
     font-size: 16px;
     text-transform: capitalize;
     color: black;
@@ -394,17 +389,14 @@ footer {
     display: block;
     transition: all 0.3s ease;
 }
-
-.footer-col ul li a:hover {
+.footer-col ul li a:hover{
     color: black;
     padding-left: 10px;
 }
-
-.footer-col .medias-socias {
+.footer-col .medias-socias{
     margin-top: 30px;
 }
-
-.footer-col .medias-socias a {
+.footer-col .medias-socias a{
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -417,38 +409,34 @@ footer {
     border: 1px solid black;
     transition: all 0.5s ease;
 }
-
-.footer-col .medias-socias a i {
+.footer-col .medias-socias a i{
     font-size: 20px;
 }
 
-.footer-col .medias-socias a:hover {
+.footer-col .medias-socias a:hover{
     color: #cd2f86;
     background-color: black;
 
-    i {
-        color: #cd2f86;
-    }
+	i {
+		color: #cd2f86;
+	}
 }
-
-.footer-col .form-sub input {
+.footer-col .form-sub input{
     width: 100%;
     padding: 10px;
     font-size: 15px;
     outline: none;
-    border: 1px solid blackwhite;
+    border: 1px solid black;
     color: black;
     background-color: white;
 }
-
-.footer-col .form-sub input::placeholder {
+.footer-col .form-sub input::placeholder{
     color: black;
 }
-
-.footer-col .form-sub button {
+.footer-col .form-sub button{
     width: 100%;
     margin-top: 10px;
-    padding: 10px;
+    padding: 10px; 
     font-size: 17px;
     outline: none;
     border: none;
@@ -456,19 +444,17 @@ footer {
     color: white;
     border-radius: 3px;
     font-weight: bold;
-    background-color: #cd2f86;
+    background-color: #cd2f86;        
 }
-
 /* Responsivo */
 @media (max-width: 800px) {
-    .footer-col {
+    .footer-col{
         width: 50%;
         margin-bottom: 30px;
     }
 }
-
 @media (max-width:600px) {
-    .footer-col {
+    .footer-col{
         width: 100%;
     }
 }

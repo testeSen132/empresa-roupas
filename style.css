@@ -326,7 +326,7 @@ li {
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #fff;
     border-radius: 2px;
     padding: 20px;

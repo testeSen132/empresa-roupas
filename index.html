@@ -15,32 +15,44 @@
 <body>
     <header>
         <nav>
-            <ul class="container-list">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                ☰
+            </button>
+            <ul class="container-list" id="menu">
                 <li><a href="index.html"><img src="assets/icon/logo.png" class="logo"></a></li>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="">Feminino <i class="bi bi-arrow-down-short"></i></a>
-                    <ul>
-                        <li><a href="/pages/feminino/camisa/camisaf.htm"><img src="assets/icon/tshirt.png"> Camisa</a></li>
-                        <li><a href="/pages/feminino/vestidos/vestido.htm"><img src="assets/icon/dress.png"> Vestido</a></li>
-                        <li><a href="/pages/feminino/moletom/moletomf.htm"><img src="assets/icon/hoodie.png"> Moletom</a></li>
-                        <li><a href="/pages/feminino/bikini/biquini.htm"><img src="assets/icon/bikini.png"> Biquine</a></li>
+                <li><button class="submenu-toggle">Feminino <i class="bi bi-arrow-down-short"></i></button>
+                    <ul class="submenu">
+                        <li><a href="/pages/feminino/camisa/camisaf.htm"><img src="assets/icon/tshirt.png"> Camisa</a>
+                        </li>
+                        <li><a href="/pages/feminino/vestidos/vestido.htm"><img src="assets/icon/dress.png"> Vestido</a>
+                        </li>
+                        <li><a href="/pages/feminino/moletom/moletomf.htm"><img src="assets/icon/hoodie.png">
+                                Moletom</a></li>
+                        <li><a href="/pages/feminino/bikini/biquini.htm"><img src="assets/icon/bikini.png"> Bikíni</a>
+                        </li>
                         <li><a href="/pages/feminino/blusas/blusas.htm"><img src="assets/icon/blusa.png"> Blusa</a></li>
                         <li><a href="/pages/feminino/calca/calcafem.htm"><img src="assets/icon/pant.png"> Calça</a></li>
                         <li><a href="/pages/feminino/shorts/short.htm"><img src="assets/icon/short.png"> Shorts</a></li>
                     </ul>
                 </li>
-                <li><a href="">Masculino <i class="bi bi-arrow-down-short"></i></a>
-                    <ul>
-                        <li><a href="/pages/masculino/camisamasc/camisamasc.htm"><img src="assets/icon/tshirt.png"> Camisa</a></li>
-                        <li><a href="/pages/masculino/moletom/moletommas.htm"><img src="assets/icon/hoodie.png"> Moletom</a></li>
+                <li><button class="submenu-toggle">Masculino <i class="bi bi-arrow-down-short"></i></button>
+                    <ul class="submenu">
+                        <li><a href="/pages/masculino/camisamasc/camisamasc.htm"><img src="assets/icon/tshirt.png">
+                                Camisa</a></li>
+                        <li><a href="/pages/masculino/moletom/moletommas.htm"><img src="assets/icon/hoodie.png">
+                                Moletom</a></li>
                         <li><a href="/pages/masculino/sunga/sunga.htm"><img src="assets/icon/trunk.png"> Sunga</a></li>
-                        <li><a href="/pages/masculino/calcamas/calcamas.htm"><img src="assets/icon/pant.png"> Calça</a></li>
-                        <li><a href="/pages/masculino/bermuda/bermuda.htm"><img src="assets/icon/bermuda.png"> Bermuda</a></li>
+                        <li><a href="/pages/masculino/calcamas/calcamas.htm"><img src="assets/icon/pant.png"> Calça</a>
+                        </li>
+                        <li><a href="/pages/masculino/bermuda/bermuda.htm"><img src="assets/icon/bermuda.png">
+                                Bermuda</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Acessórios <i class="bi bi-arrow-down-short"></i></a>
-                    <ul>
-                        <li><a href="/pages/acessorios/oculos/oculos.htm"><i class="bi bi-sunglasses"></i> Óculos</a></li>
+                <li><button class="submenu-toggle">Acessórios <i class="bi bi-arrow-down-short"></i></button>
+                    <ul class="submenu">
+                        <li><a href="/pages/acessorios/oculos/oculos.htm"><i class="bi bi-sunglasses"></i> Óculos</a>
+                        </li>
                         <li><a href="/pages/acessorios/bones/bones.htm"><img src="assets/icon/cap.png"> Bonés</a></li>
                     </ul>
                 </li>
@@ -103,7 +115,8 @@
                 </div>
 
                 <div id="Scroller" class="scroller" role="group" aria-label="Items Scroller" aria-live="polite">
-                    <a href="pages/acessorios/bones/bones.htm" class="snap" aria-label="1 of 6" aria-roledescription="item">
+                    <a href="pages/acessorios/bones/bones.htm" class="snap" aria-label="1 of 6"
+                        aria-roledescription="item">
                         <figure>
                             <picture class="categories">
                                 <img fetchpriority="high" src="./assets/categories/bones.jpg" alt="" />
@@ -111,7 +124,8 @@
 
                         </figure>
                     </a>
-                    <a href="pages/feminino/bikini/biquini.htm" class="snap" aria-label="2 of 6" aria-roledescription="item">
+                    <a href="pages/feminino/bikini/biquini.htm" class="snap" aria-label="2 of 6"
+                        aria-roledescription="item">
                         <figure>
                             <picture class="categories">
 
@@ -120,7 +134,8 @@
 
                         </figure>
                     </a>
-                    <a href="pages/feminino/calca/calcafem.htm" class="snap" aria-label="3 of 6" aria-roledescription="item">
+                    <a href="pages/feminino/calca/calcafem.htm" class="snap" aria-label="3 of 6"
+                        aria-roledescription="item">
                         <figure>
                             <picture class="categories">
 
@@ -129,7 +144,8 @@
 
                         </figure>
                     </a>
-                    <a href="pages/acessorios/oculos/oculos.htm" class="snap" aria-label="4 of 6" aria-roledescription="item">
+                    <a href="pages/acessorios/oculos/oculos.htm" class="snap" aria-label="4 of 6"
+                        aria-roledescription="item">
                         <figure>
                             <picture class="categories">
 
@@ -138,7 +154,8 @@
 
                         </figure>
                     </a>
-                    <a href="pages/masculino/camisamasc/camisamasc.htm" class="snap" aria-label="5 of 6" aria-roledescription="item">
+                    <a href="pages/masculino/camisamasc/camisamasc.htm" class="snap" aria-label="5 of 6"
+                        aria-roledescription="item">
                         <figure>
                             <picture class="categories">
 
@@ -147,7 +164,8 @@
 
                         </figure>
                     </a>
-                    <a href="pages/feminino/blusas/blusas.htm" class="snap" aria-label="6 of 6" aria-roledescription="item">
+                    <a href="pages/feminino/blusas/blusas.htm" class="snap" aria-label="6 of 6"
+                        aria-roledescription="item">
                         <figure>
                             <picture class="categories">
 
@@ -169,36 +187,46 @@
                 <hr>
             </div>
             <div class="cards">
-                <div class="card">
-                    <img src="./assets/vestido/vest1.png" alt="" class="center">
-                    <h5></h5>
-                    <p class="preco">$559,00</p>
-                    <a href=""><button>Ver mais</button></a>
-                </div>
-                <div class="card">
-                    <img src="./assets/vestido/vest2.png" alt="" class="center">
-                    <h5></h5>
-                    <p class="preco">$559,00</p>
-                    <a href=""><button>Ver mais</button></a>
-                </div>
-                <div class="card">
-                    <img src="./assets/vestido/vest3.png" alt="" class="center">
-                    <h5</h5>
-                    <p class="preco">$559,00</p>
-                    <a href=""><button>Ver mais</button></a>
-                </div>
-                <div class="card">
-                    <img src="./assets/vestido/vest5.png" alt="" class="center">
-                    <h5></h5>
-                    <p class="preco">$559,00</p>
-                    <a href=""><button>Ver mais</button></a>
-                </div>
-                <div class="card">
-                    <img src="./assets/vestido/vest7.png" alt="" class="center">
-                    <h5>brown high heels</h5>
-                    <p class="preco">$559,00</p>
-                    <a href=""><button>Ver mais</button></a>
-                </div>
+                <a href="/pages/feminino/vestidos/vestido1.htm">
+                    <div class="card">
+                        <img src="./assets/vestido/vest1.png" alt="" class="center">
+                        <h5>Vestido azul</h5>
+                        <p class="preco">R$25,00</p>
+                        <a href=""><button>Ver mais</button></a>
+                    </div>
+                </a>
+                <a href="/pages/feminino/vestidos/vestido2.htm">
+                    <div class="card">
+                        <img src="./assets/vestido/vest2.png" alt="" class="center">
+                        <h5>Vestido preto brilhante</h5>
+                        <p class="preco">R$20,00</p>
+                        <a href=""><button>Ver mais</button></a>
+                    </div>
+                </a>
+                <a href="/pages/feminino/vestidos/vestido3.htm">
+                    <div class="card">
+                        <img src="./assets/vestido/vest3.png" alt="" class="center">
+                        <h5>Vestido preto rendado</h5>
+                        <p class="preco">R$30,00</p>
+                        <a href=""><button>Ver mais</button></a>
+                    </div>
+                </a>
+                <a href="/pages/feminino/vestidos/vestido4.htm">
+                    <div class="card">
+                        <img src="./assets/vestido/vest5.png" alt="" class="center">
+                        <h5>Vestido verde</h5>
+                        <p class="preco">R$40,00</p>
+                        <a href=""><button>Ver mais</button></a>
+                    </div>
+                </a>
+                <a href="/pages/feminino/vestidos/vestido5.htm">
+                    <div class="card">
+                        <img src="./assets/vestido/vest7.png" alt="" class="center">
+                        <h5>Vestido amarelo</h5>
+                        <p class="preco">R$50,00</p>
+                        <a href=""><button>Ver mais</button></a>
+                    </div>
+                </a>
             </div>
             <div class="showcase">
                 <hr>
@@ -206,36 +234,51 @@
                 <hr>
             </div>
             <div class="cards">
-                <div class="card">
-                    <img src="./assets/moletonsMasc/moletonmas (1).jpg" alt="" class="center">
-                    <h5>Moletom de algodão, ciano</h5>
-                    <p class="preco">$559,00</p>
-                    <a href=""><button>Ver mais</button></a>
-                </div>
-                <div class="card">
-                    <img src="./assets/moletonsMasc/moletonmas (1).png" alt="" class="center">
-                    <h5>Moletom oversized, branco</h5>
-                    <p class="preco">$559,00</p>
-                    <a href=""><button>Ver mais</button></a>
-                </div>
-                <div class="card">
-                    <img src="./assets/moletonsMasc/moletonmas (2).jpg" alt="" class="center">
-                    <h5>Moletom rosa em forro</h5>
-                    <p class="preco">$559,00</p>
-                    <a href=""><button>Ver mais</button></a>
-                </div>
-                <div class="card">
-                    <img src="./assets/moletonsMasc/moletonmas (3).jpg" alt="" class="center">
-                    <h5>Moletom fechado, preto e marrom</h5>
-                    <p class="preco">$559,00</p>
-                    <a href=""><button>Ver mais</button></a>
-                </div>
-                <div class="card">
-                    <img src="./assets/moletonsMasc/moletonmas (4).jpg" alt="" class="center">
-                    <h5>Moletom lilás</h5>
-                    <p class="preco">$559,00</p>
-                    <a href=""><button>Ver mais</button></a>
-                </div>
+                <a href="/pages/masculino/moletom/paginas/moletommas1/moletommas1.htm">
+                    <div class="card">
+                        <img src="./assets/moletonsMasc/moletonmas (1).jpg" alt="" class="center">
+                        <h5>Moletom de algodão, ciano</h5>
+                        <p class="preco">R$150,00</p>
+                        <a href="/pages/masculino/moletom/paginas/moletommas1/moletommas1.htm"><button>Ver
+                                mais</button></a>
+                    </div>
+                </a>
+                <a href="/pages/masculino/moletom/paginas/moletommas2/moletommas2.htm">
+                    <div class="card">
+                        <img src="./assets/moletonsMasc/moletonmas (1).png" alt="" class="center">
+                        <h5>Moletom oversized, branco</h5>
+                        <p class="preco">R$160,00</p>
+                        <a href="/pages/masculino/moletom/paginas/moletommas2/moletommas2.htm"><button>Ver
+                                mais</button></a>
+                    </div>
+                </a>
+                <a href="/pages/masculino/moletom/paginas/moletommas3/moletommas3.htm">
+                    <div class="card">
+                        <img src="./assets/moletonsMasc/moletonmas (2).jpg" alt="" class="center">
+                        <h5>Moletom rosa em forro</h5>
+                        <p class="preco">R$170,00</p>
+                        <a href="/pages/masculino/moletom/paginas/moletommas3/moletommas3.htm"><button>Ver
+                                mais</button></a>
+                    </div>
+                </a>
+                <a href="/pages/masculino/moletom/paginas/moletommas5/moletommas5.htm">
+                    <div class="card">
+                        <img src="./assets/moletonsMasc/moletonmas (3).jpg" alt="" class="center">
+                        <h5>Moletom azul escuro</h5>
+                        <p class="preco">R$150,00</p>
+                        <a href="/pages/masculino/moletom/paginas/moletommas5/moletommas5.htm"><button>Ver
+                                mais</button></a>
+                    </div>
+                </a>
+                <a href="/pages/masculino/moletom/paginas/moletommas6/moletommas6.htm">
+                    <div class="card">
+                        <img src="./assets/moletonsMasc/moletonmas (4).jpg" alt="" class="center">
+                        <h5>Moletom lilás</h5>
+                        <p class="preco">R$150,00</p>
+                        <a href="/pages/masculino/moletom/paginas/moletommas6/moletommas6.htm"><button>Ver
+                                mais</button></a>
+                    </div>
+                </a>
             </div>
             <div class="showcase">
                 <hr>
@@ -243,36 +286,46 @@
                 <hr>
             </div>
             <div class="cards">
-                <div class="card">
-                    <img src="./assets/moletonfem/moletonf (1).jpg" alt="" class="center">
-                    <h5>brown high heels</h5>
-                    <p class="preco">$559,00</p>
-                    <a href=""><button>Ver mais</button></a>
-                </div>
-                <div class="card">
-                    <img src="./assets/moletonfem/moletonf (3).jpg" alt="" class="center">
-                    <h5>brown high heels</h5>
-                    <p class="preco">$559,00</p>
-                    <a href=""><button>Ver mais</button></a>
-                </div>
-                <div class="card">
-                    <img src="./assets/moletonfem/moletonf (4).jpg" alt="" class="center">
-                    <h5>brown high heels</h5>
-                    <p class="preco">$559,00</p>
-                    <a href=""><button>Ver mais</button></a>
-                </div>
-                <div class="card">
-                    <img src="./assets/moletonfem/moletonf (6).jpg" alt="" class="center">
-                    <h5>brown high heels</h5>
-                    <p class="preco">$559,00</p>
-                    <a href=""><button>Ver mais</button></a>
-                </div>
-                <div class="card">
-                    <img src="./assets/moletonfem/moletonf (8).jpg" alt="" class="center">
-                    <h5>brown high heels</h5>
-                    <p class="preco">$559,00</p>
-                    <a href=""><button>Ver mais</button></a>
-                </div>
+                <a href="/pages/feminino/moletom/moletomf1.htm">
+                    <div class="card">
+                        <img src="./assets/moletonfem/moletonf (1).jpg" alt="" class="center">
+                        <h5>Moletom cropped</h5>
+                        <p class="preco">R$99,90</p>
+                        <a href="/pages/feminino/moletom/moletomf1.htm"><button>Ver mais</button></a>
+                    </div>
+                </a>
+                <a href="/pages/feminino/moletom/moletomf3.htm">
+                    <div class="card">
+                        <img src="./assets/moletonfem/moletonf (3).jpg" alt="" class="center">
+                        <h5>Moletom canguru</h5>
+                        <p class="preco">R$80,00</p>
+                        <a href="/pages/feminino/moletom/moletomf3.htm"><button>Ver mais</button></a>
+                    </div>
+                </a>
+                <a href="/pages/feminino/moletom/moletomf4.htm">
+                    <div class="card">
+                        <img src="./assets/moletonfem/moletonf (4).jpg" alt="" class="center">
+                        <h5>Moletom-cru </h5>
+                        <p class="preco">R$70,00</p>
+                        <a href="/pages/feminino/moletom/moletomf4.htm"><button>Ver mais</button></a>
+                    </div>
+                </a>
+                <a href="/pages/feminino/moletom/moletomf6.htm">
+                    <div class="card">
+                        <img src="./assets/moletonfem/moletonf (6).jpg" alt="" class="center">
+                        <h5>Moletom cropped</h5>
+                        <p class="preco">R$90,00</p>
+                        <a href="/pages/feminino/moletom/moletomf6.htm"><button>Ver mais</button></a>
+                    </div>
+                </a>
+                <a href="/pages/feminino/moletom/moletomf8.htm">
+                    <div class="card">
+                        <img src="./assets/moletonfem/moletonf (8).jpg" alt="" class="center">
+                        <h5>Moletom </h5>
+                        <p class="preco">R$99,99</p>
+                        <a href="/pages/feminino/moletom/moletomf8.htm"><button>Ver mais</button></a>
+                    </div>
+                </a>
             </div>
 
         </div>

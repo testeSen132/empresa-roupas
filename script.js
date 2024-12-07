@@ -35,11 +35,32 @@ function updateControls() {
 
 
 // responsividade header
-// Seleciona o botão hamburguer e o menu
-const menuToggle = document.getElementById("menu-toggle");
-const menu = document.getElementById("menu");
 
-// Adiciona um evento de clique para abrir/fechar o menu
-menuToggle.addEventListener("click", () => {
+document.addEventListener("DOMContentLoaded", () => {
+  // Menu hamburguer
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  menuToggle.addEventListener("click", () => {
     menu.classList.toggle("active");
+  });
+
+  // Submenu toggle
+  const submenuToggles = document.querySelectorAll(".submenu-toggle");
+
+  submenuToggles.forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+      const currentSubmenu = toggle.nextElementSibling;
+
+    document.querySelectorAll(".submenu").forEach((submenu) =>{
+      if (submenu !== currentSubmenu){
+        submenu.classList.remove("expanded")
+      }
+    })
+
+      // fechar as outras categorias
+
+      currentSubmenu.classList.toggle("expanded");
+    });
+  });
 });

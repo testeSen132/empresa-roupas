@@ -318,12 +318,15 @@ li {
     font-size: 16px;
     font-weight: bold;
     border: 1px solid #00000033;
-    width: 80px;
+    width: 85px;
     padding: 2px;
     margin: 10px auto;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: #fff;
     border-radius: 2px;
     padding: 20px;
@@ -332,6 +335,7 @@ li {
     box-shadow: 4px 4px 8px #0000001a;
     align-items: center;
     text-align: center;
+
     transition: transform 0.35s;
 }
 

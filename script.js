@@ -32,3 +32,14 @@ function updateControls() {
   nextBtn.toggleAttribute('disabled', isAtEnd);
   prevBtn.toggleAttribute('disabled', isAtStart);
 }
+
+
+// responsividade header
+// Seleciona o botão hamburguer e o menu
+const menuToggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+// Adiciona um evento de clique para abrir/fechar o menu
+menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});

@@ -100,8 +100,41 @@ li {
     }
 }
 
-
+.menu-toggle{
+    display: none;
+}
 /* fim do cabecalho */
+
+/* cabecalho responsivo */
+
+@media (max-width: 768px) {
+    /* Mostra o botão hamburguer */
+    .menu-toggle {
+        display: block;
+        background-color: ;
+    }
+
+    /* Esconde os links principais inicialmente */
+    .container-list {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #000;
+        padding: 10px 0;
+    }
+
+    .container-list.active {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* fim do cabecalho responsivo */
 
 /* mini banner */
 

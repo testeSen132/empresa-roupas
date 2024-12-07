@@ -21,140 +21,153 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#"><img src="../../assets/icon/logo.png" class="logo"></a></li>
-                <li><a href="#">Início</a></li>
-                <li><a href="">Feminino <i class="bi bi-arrow-down-short"></i></a>
-                    <ul>
-                        <li><a href=""><img src="../../assets/icon/tshirt.png"> Camisa</a></li>
-                        <li><a href=""><img src="../../assets/icon/dress.png"> Vestido</a></li>
-                        <li><a href=""><img src="../../assets/icon/hoodie.png"> Moletom</a></li>
-                        <li><a href=""><img src="../../assets/icon/bikini.png"> Biquine</a></li>
-                        <li><a href=""><img src="../../assets/icon/blusa.png"> Blusa</a></li>
-                        <li><a href=""><img src="../../assets/icon/pant.png"> Calça</a></li>
-                        <li><a href=""><img src="../../assets/icon/short.png"> Shorts</a></li>
-                    </ul>
-                </li>
-                <li><a href="">Masculino <i class="bi bi-arrow-down-short"></i></a>
-                    <ul>
-                        <li><a href=""><img src="../../assets/icon/tshirt.png"> Camisa</a></li>
-                        <li><a href=""><img src="../../assets/icon/hoodie.png"> Moletom</a></li>
-                        <li><a href=""><img src="../../assets/icon/trunk.png"> Sunga</a></li>
-                        <li><a href=""><img src="../../assets/icon/pant.png"> Calça</a></li>
-                        <li><a href=""><img src="../../assets/icon/bermuda.png"> Bermuda</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Acessórios <i class="bi bi-arrow-down-short"></i></a>
-                    <ul>
-                        <li><a href="#"><i class="bi bi-sunglasses"></i> Óculos</a></li>
-                        <li><a href="../acessorios/bones/bones.htm"><img src="../../assets/icon/cap.png"> Bonés</a></li>
-                    </ul>
-                </li>
-                <li><a href="../parceiras/parceiras.htm">Lojas Parceiras</a></li>
-                <li><a href="../contato/contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+                <li><a href=" /index.html"><img src="/assets/icon/logo.png" class="logo"></a></li>
+<li><a href="/index.html">Início</a></li>
+<li><a href="">Feminino <i class="bi bi-arrow-down-short"></i></a>
+    <ul>
+        <li><a href="../feminino/camisa/camisaf.htm"><img src="/assets/icon/tshirt.png">
+                Camisa</a></li>
+        <li><a href="../feminino/vestidos/vestido.htm"><img src="/assets/icon/dress.png">
+                Vestido</a></li>
+        <li><a href="../feminino/moletom/moletomf.htm"><img src="/assets/icon/hoodie.png">
+                Moletom</a></li>
+        <li><a href="../feminino/bikini/biquini.htm"><img src="/assets/icon/bikini.png">
+                Biquine</a></li>
+        <li><a href="../feminino/blusas/blusas.htm"><img src="/assets/icon/blusa.png">
+                Blusa</a></li>
+        <li><a href="../feminino/calca/calcafem.htm"><img src="/assets/icon/pant.png">
+                Calça</a></li>
+        <li><a href="../feminino/shorts/short.htm"><img src="/assets/icon/short.png">
+                Shorts</a></li>
+    </ul>
+</li>
+<li><a href="">Masculino <i class="bi bi-arrow-down-short"></i></a>
+    <ul>
+        <li><a href="../masculino/camisamasc/camisamasc.htm"><img src="/assets/icon/tshirt.png"> Camisa</a></li>
+        <li><a href="../masculino/moletom/moletommas.htm"><img src="/assets/icon/hoodie.png">
+                Moletom</a></li>
+        <li><a href="../masculino/sunga/sunga.htm"><img src="/assets/icon/trunk.png">
+                Sunga</a></li>
+        <li><a href="../masculino/calcamas/calcamas.htm"><img src="/assets/icon/pant.png">
+                Calça</a></li>
+        <li><a href="../masculino/bermuda/bermuda.htm"><img src="/assets/icon/bermuda.png">
+                Bermuda</a></li>
+    </ul>
+</li>
+<li><a href="#">Acessórios <i class="bi bi-arrow-down-short"></i></a>
+    <ul>
+        <li><a href="../acessorios/oculos/oculos.htm"><i class="bi bi-sunglasses"></i> Óculos</a>
+        </li>
+        <li><a href="../acessorios/bones/bones.htm"><img src="/assets/icon/cap.png">
+                Bonés</a></li>
+    </ul>
+</li>
+<li><a href="../parceiras/parceiras.htm">Lojas Parceiras</a></li>
+<li><a href="../contato/contato.html">Contato</a></li>
+</ul>
+</nav>
+</header>
 
-    <main>
-        <div class="status-container">
-            <div class="banner-status">
-                <h1>Status do Pedido</h1>
-                <p>Insira o número do pedido para acompanhar o status.</p>
+<main>
+    <div class="status-container">
+        <div class="banner-status">
+            <h1>Status do Pedido</h1>
+            <p>Insira o número do pedido para acompanhar o status.</p>
+        </div>
+
+        <div class="order-input">
+            <input type="text" id="order-id" placeholder="Digite o número do pedido">
+            <button id="check-status">Consultar</button>
+        </div>
+
+        <div class="status-tracker">
+            <div class="status-step">
+                <div class="status-icon" id="pending-icon"></div>
+                <h3>Pendente</h3>
+                <p>Estamos processando o seu pedido.</p>
             </div>
-        
-            <div class="order-input">
-                <input type="text" id="order-id" placeholder="Digite o número do pedido">
-                <button id="check-status">Consultar</button>
+
+            <div class="status-step">
+                <div class="status-icon" id="shipping-icon"></div>
+                <h3>A Caminho</h3>
+                <p>Seu pedido já saiu para entrega.</p>
             </div>
-        
-            <div class="status-tracker">
-                <div class="status-step">
-                    <div class="status-icon" id="pending-icon"></div>
-                    <h3>Pendente</h3>
-                    <p>Estamos processando o seu pedido.</p>
-                </div>
-        
-                <div class="status-step">
-                    <div class="status-icon" id="shipping-icon"></div>
-                    <h3>A Caminho</h3>
-                    <p>Seu pedido já saiu para entrega.</p>
-                </div>
-        
-                <div class="status-step">
-                    <div class="status-icon" id="delivered-icon"></div>
-                    <h3>Entregue</h3>
-                    <p>O pedido foi entregue no endereço informado.</p>
-                </div>
-        
-                <div class="status-step">
-                    <div class="status-icon" id="canceled-icon"></div>
-                    <h3>Cancelado</h3>
-                    <p>O pedido foi cancelado por algum motivo.</p>
-                </div>
+
+            <div class="status-step">
+                <div class="status-icon" id="delivered-icon"></div>
+                <h3>Entregue</h3>
+                <p>O pedido foi entregue no endereço informado.</p>
             </div>
-        
-            <div class="status-result" id="status-message"></div>
-        </div>        
-    </main>
 
-    <footer>
-        <div class="container-footer">
-            <div class="row-footer">
-                <!-- footer col-->
-                <div class="footer-col">
-                    <h4>Sobre Nós</h4>
-                    <p>Somos uma marca apaixonada por criar roupas que unem conforto, estilo e qualidade. Desde nossa
-                        fundação, temos como missão proporcionar a você peças que refletem sua personalidade, com
-                        designs
-                        modernos e exclusivos para todas as ocasiões.</p>
-                </div>
-                <!--end footer col-->
-                <!-- footer col-->
-                <div class="footer-col">
-                    <h4>Obter ajuda</h4>
-                    <ul>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="transporte.html">Transporte</a></li>
-                        <li><a href="devolucoes.html">devoluções</a></li>
-                        <li><a href="statuspedido.html">Status De Pedido</a></li>
-                        <li><a href="opcoespagamento.html">Opções De Pagamento</a></li>
-                    </ul>
-                </div>
-                <!--end footer col-->
-                <!-- footer col-->
-                <div class="footer-col">
-                    <h4>Loja online</h4>
-                    <ul>
-                        <li><a href="#">Vestido</a></li>
-                        <li><a href="#">Blusa</a></li>
-                        <li><a href="#">Óculos</a></li>
-                        <li><a href="#">Shorts</a></li>
-                    </ul>
-                </div>
-                <!--end footer col-->
-                <!-- footer col-->
-                <div class="footer-col">
-                    <h4>JUNTE-SE A NÓS</h4>
-                    <div class="form-sub">
-                        <form>
-                            <input type="email" placeholder="Digite o seu e-mail" required>
-                            <button>inscrever</button>
-                        </form>
-                    </div>
-
-                    <div class="medias-socias">
-                        <a href="https://www.facebook.com/"> <i class="bi bi-facebook"></i> </a>
-                        <a href="https://www.instagram.com/"> <i class="bi bi-instagram"></i> </a>
-                        <a href="https://x.com/"> <i class="bi bi-twitter-x"></i> </a>
-                        <a href="https://www.linkedin.com/"> <i class="bi bi-linkedin"></i> </a>
-                    </div>
-
-                </div>
-                <!--end footer col-->
+            <div class="status-step">
+                <div class="status-icon" id="canceled-icon"></div>
+                <h3>Cancelado</h3>
+                <p>O pedido foi cancelado por algum motivo.</p>
             </div>
         </div>
-    </footer>
-    <script src="script.js"></script>
+
+        <div class="status-result" id="status-message"></div>
+    </div>
+</main>
+
+<footer>
+    <div class="container-footer">
+        <div class="row-footer">
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>Sobre Nós</h4>
+                <p>Somos uma marca apaixonada por criar roupas que unem conforto, estilo e qualidade. Desde nossa
+                    fundação, temos como missão proporcionar a você peças que refletem sua personalidade, com
+                    designs
+                    modernos e exclusivos para todas as ocasiões.</p>
+            </div>
+            <!--end footer col-->
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>Obter ajuda</h4>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="transporte.html">Transporte</a></li>
+                    <li><a href="devolucoes.html">devoluções</a></li>
+                    <li><a href="statuspedido.html">Status De Pedido</a></li>
+                    <li><a href="opcoespagamento.html">Opções De Pagamento</a></li>
+                </ul>
+            </div>
+            <!--end footer col-->
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>Loja online</h4>
+                <ul> 
+                    <li><a href="../feminino/vestidos/vestido.htm">Vestido</a></li>
+                    <li><a href="../feminino/blusas/blusas.htm">Blusa</a></li>
+                    <li><a href="../acessorios/oculos/oculos.htm">Óculos</a></li>
+                    <li><a href="../feminino/shorts/short.htm">Shorts</a></li>
+                </ul>
+            </div>
+            <!--end footer col-->
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>JUNTE-SE A NÓS</h4>
+                <div class="form-sub">
+                    <form>
+                        <input type="email" placeholder="Digite o seu e-mail" required>
+                        <button>inscrever</button>
+                    </form>
+                </div>
+
+                <div class="medias-socias">
+                    <a href="https://www.facebook.com/"> <i class="bi bi-facebook"></i> </a>
+                    <a href="https://www.instagram.com/"> <i class="bi bi-instagram"></i> </a>
+                    <a href="https://x.com/"> <i class="bi bi-twitter-x"></i> </a>
+                    <a href="https://www.linkedin.com/"> <i class="bi bi-linkedin"></i> </a>
+                </div>
+
+            </div>
+            <!--end footer col-->
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
 
 </html>

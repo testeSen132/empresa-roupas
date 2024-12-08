@@ -20,9 +20,9 @@
             <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
                 ☰
             </button>
-            <ul>
-                <li><a href="/index.html"><img src="/assets/icon/logo.png" class="logo"></a></li>
-                <li><a href="/index.html">Início</a></li>
+            <ul class="container-list" id="menu">
+                <li><a href="../../../index.html"><img src="/assets/icon/logo.png" class="logo"></a></li>
+                <li><a href="../../../index.html">Início</a></li>
                 <li><button class="submenu-toggle">Feminino <i class="bi bi-arrow-down-short"></i></button>
                     <ul class="submenu">
                         <li><a href="../../feminino/camisa/camisaf.htm"><img src="../../../assets/icon/tshirt.png">
@@ -42,7 +42,7 @@
                     </ul>
                 </li>
                 <li><button class="submenu-toggle">Masculino <i class="bi bi-arrow-down-short"></i></button>
-                    <ul>
+                    <ul class="submenu">
                         <li><a href="../../masculino/camisamasc/camisamasc.htm"><img
                                     src="../../../assets/icon/tshirt.png"> Camisa</a></li>
                         <li><a href="../../masculino/moletom/moletommas.htm"><img src="../../../assets/icon/hoodie.png">
@@ -55,8 +55,8 @@
                                 Bermuda</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Acessórios <i class="bi bi-arrow-down-short"></i></a>
-                    <ul>
+                <li><button class="submenu-toggle">Acessórios <i class="bi bi-arrow-down-short"></i></button>
+                    <ul class="submenu">
                         <li><a href="../../acessorios/oculos/oculos.htm"><i class="bi bi-sunglasses"></i> Óculos</a>
                         </li>
                         <li><a href="../../acessorios/bones/bones.htm"><img src="../../../assets/icon/cap.png">
@@ -68,6 +68,7 @@
             </ul>
         </nav>
     </header>
+
 
     <div class="seta">
         <a href="camisaf.htm"><img src="images/seta.png" alt=""></a>
@@ -182,5 +183,5 @@
 
 </body>
 <script src="script.js"></script>
-
+<script src="/header.js"></script>
 </html>

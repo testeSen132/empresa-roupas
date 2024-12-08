@@ -1103,6 +1103,7 @@ footer {
     }
 
     .container2 {
+        padding-top: 40px;
         display: flex;
         flex-wrap: wrap;
     }
@@ -1164,7 +1165,7 @@ footer {
         width: 90%;
         display: flex;
         justify-content: space-around;
-        margin: 20px;
+        margin: 45px 20px;
 
     }
 

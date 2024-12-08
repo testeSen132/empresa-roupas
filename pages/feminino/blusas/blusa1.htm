@@ -18,11 +18,14 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                ☰
+            </button>
+            <ul class="container-list" id="menu">
                 <li><a href="../../../index.html"><img src="/assets/icon/logo.png" class="logo"></a></li>
                 <li><a href="../../../index.html">Início</a></li>
-                <li><a href="">Feminino <i class="bi bi-arrow-down-short"></i></a>
-                    <ul>
+                <li><button class="submenu-toggle">Feminino <i class="bi bi-arrow-down-short"></i></button>
+                    <ul class="submenu">
                         <li><a href="../../feminino/camisa/camisaf.htm"><img src="../../../assets/icon/tshirt.png">
                                 Camisa</a></li>
                         <li><a href="../../feminino/vestidos/vestido.htm"><img src="../../../assets/icon/dress.png">
@@ -30,7 +33,7 @@
                         <li><a href="../../feminino/moletom/moletomf.htm"><img src="../../../assets/icon/hoodie.png">
                                 Moletom</a></li>
                         <li><a href="../../feminino/bikini/biquini.htm"><img src="../../../assets/icon/bikini.png">
-                                Biquine</a></li>
+                                Biquíni</a></li>
                         <li><a href="../../feminino/blusas/blusas.htm"><img src="../../../assets/icon/blusa.png">
                                 Blusa</a></li>
                         <li><a href="../../feminino/calca/calcafem.htm"><img src="../../../assets/icon/pant.png">
@@ -39,8 +42,8 @@
                                 Shorts</a></li>
                     </ul>
                 </li>
-                <li><a href="">Masculino <i class="bi bi-arrow-down-short"></i></a>
-                    <ul>
+                <li><button class="submenu-toggle">Masculino <i class="bi bi-arrow-down-short"></i></button>
+                    <ul class="submenu">
                         <li><a href="../../masculino/camisamasc/camisamasc.htm"><img
                                     src="../../../assets/icon/tshirt.png"> Camisa</a></li>
                         <li><a href="../../masculino/moletom/moletommas.htm"><img src="../../../assets/icon/hoodie.png">
@@ -53,8 +56,8 @@
                                 Bermuda</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Acessórios <i class="bi bi-arrow-down-short"></i></a>
-                    <ul>
+                <li><button class="submenu-toggle">Acessórios <i class="bi bi-arrow-down-short"></i></button>
+                    <ul class="submenu">
                         <li><a href="../../acessorios/oculos/oculos.htm"><i class="bi bi-sunglasses"></i> Óculos</a>
                         </li>
                         <li><a href="../../acessorios/bones/bones.htm"><img src="../../../assets/icon/cap.png">
@@ -184,5 +187,5 @@
 
 </body>
 <script src="script.js"></script>
-
+<script src="/header.js"></script>
 </html>

@@ -17,11 +17,14 @@
 <body>
     <header>
         <nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                ☰
+            </button>
             <ul>
-                <li><a href="../../../index.html"><img src="/assets/icon/logo.png" class="logo"></a></li>
-                <li><a href="../../../index.html">Início</a></li>
-                <li><a href="">Feminino <i class="bi bi-arrow-down-short"></i></a>
-                    <ul>
+                <li><a href="/index.html"><img src="/assets/icon/logo.png" class="logo"></a></li>
+                <li><a href="/index.html">Início</a></li>
+                <li><button class="submenu-toggle">Feminino <i class="bi bi-arrow-down-short"></i></button>
+                    <ul class="submenu">
                         <li><a href="../../feminino/camisa/camisaf.htm"><img src="../../../assets/icon/tshirt.png">
                                 Camisa</a></li>
                         <li><a href="../../feminino/vestidos/vestido.htm"><img src="../../../assets/icon/dress.png">
@@ -38,7 +41,7 @@
                                 Shorts</a></li>
                     </ul>
                 </li>
-                <li><a href="">Masculino <i class="bi bi-arrow-down-short"></i></a>
+                <li><button class="submenu-toggle">Masculino <i class="bi bi-arrow-down-short"></i></button>
                     <ul>
                         <li><a href="../../masculino/camisamasc/camisamasc.htm"><img
                                     src="../../../assets/icon/tshirt.png"> Camisa</a></li>

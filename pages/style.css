@@ -15,6 +15,7 @@ nav {
     padding: 0 15px;
     color: #fff;
     background-color: #000;
+    font-size: 20px;
 }
 
 nav ul {
@@ -34,7 +35,6 @@ nav a {
     display: block;
     padding: 0 10px;
     color: #FFF;
-    font-size: 20px;
     line-height: 60px;
     text-decoration: none;
     transition: 150ms;
@@ -69,6 +69,13 @@ nav ul ul ul li {
 /* estilo menu */
 .menu-toggle {
     display: none;
+}
+
+/* previnir erros */
+ul .menu-toggle {
+    display: none;
+    background-color: #000;
+    border: none;
 }
 
 .submenu {

@@ -11,6 +11,17 @@ body {
     width: 60px;
 }
 
+header a{
+    text-decoration: none;
+
+}
+
+header a:hover{
+    text-decoration: none;
+    color: #FFF;
+}
+
+
 nav {
     padding: 0 15px;
     color: #fff;
